@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<body background="C:\Users\Asus\Desktop\Projects\Registration Form\ocean.jpg";">
+   <h1 style="color:#c4b8f9"><center>XYZ LIVE CONCERT</center></h1>
+<marquee><h5 style="color:powderblue"><i>Register Now! Only limited seats available!!</i></h5></marquee><hr>
+<p style="font-family: Arial"><h3 style="color:#FFE4E1">XYZ band is back again!<br>
+The popular punk rock band will hold a concert at the ABC stadium.<br>Don't let this opportunity slip away.</h3></p>
+<p style="font-family: Verdana"><h4 style="color:#E6E6FA">Date: June 13, 2023<br>
+Time: 7:00 PM - 12:00 PM</h4></p>
+<pre>
+<form action="registration.php" method="post"><!--method="get"-->
+<fieldset><legend style="background-color:#FCF3CF"><b>Enter your details</b></legend>
+<p style="color:#c4b8f9;font-size: 20px;">
+  	<label for="fname">First name:</label>   	  <input type="text" placeholder=" first name " id="fname" name="fname" required pattern="[a-z]+">    <input type="text" placeholder=" middle name " id="mname" name="mname" required pattern="[a-z]+">    <input type="text" placeholder=" last name " id="lname" name="lname" required pattern="[a-z]+"><br>
+	<label>Age:</label>          	  <input type="number" name="uage" value="Age" required pattern="[16-40]+"><br>
+	<label><b>Gender:</b></label>	          <input type="radio" name="g" value="Male">Male
+      	   	          <input type="radio" name="g" value="Female">Female
+		          <input type="radio" name="g" value="Other">Other<br>
+	<label for="phone">Phone No:</label>     	  <input type="tel" id="phone" name="phone" placeholder="091-1234567890" pattern="[091]{3}-[0-9]{5}-[0-9]{5}" required ><br>
+	<label for="email">Email address:</label>	  <input type="email" id="mail" name="email"><br>
+	<label><b>Seating Options:</b></label>  <input type="radio" name="g" value="Front Stage">Front
+			  <input type="radio" name="g" value="Middle">Middle
+		       	  <input type="radio" name="g" value="Balcony">Balcony<br>
+	<label>No. of tickets:</label>   <input type="number" name="ticket" ><br>
+	<label for="pay">Payment mode:</label>  	  <input type="radio" name="pay" value="Wire Transfer">Wire Transfer
+		       	  <input type="radio" name="pay" value="Check">Check
+		       	  <input type="radio" name="pay" value="Credit">Credit
+		       	  <input type="radio" name="pay" value="Debit">Debit	
+
+						<input type="SUBMIT">		<button type="button" onclick="disable_button()">Clear All</button><hr>
+<p style="color:#c4b8f9;font-size: 15px;">	<b>Comments:</b><br>
+	<textarea name="comments" id="comments" style="font-family:sans-serif;font-size:15"></textarea></p>
+</p>
+</fieldset> 
+<fieldset><legend style="background-color:#FCF3CF"><b>REMINDERS</b></legend>
+<ul style="color:#c4b8f9;font-size: 20px;">
+<li>Various food stalls and drinks will be available outside the venue.</li>
+<li>Relevant links will be sent via email after registration.</li>
+<li>The concert will begin at 7:00 PM and ends at 12:00 PM.</li>
+<li>Everyone around you is there to have fun so please respect other attendees.</li>
+<li>Tickets are NON REFUNDABLE.</li>
+</ul><hr>
+<marquee style="background-color:#302366"><h5 style="color:#c4b8f9"><i>GIVE US A CALL IF YOU HAVE ANY QUERY: <a href="tel:123-456-7890p123">CLICK TO CALL</a>
+</i></h5></marquee>
+</fieldset>       
+        </form>
+    </pre>
+</body>
+</html>
